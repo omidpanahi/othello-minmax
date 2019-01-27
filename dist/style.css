@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 15px;
+}
+#header span {
+  font-weight: bold;  
+}
+#board {
+  width: 600px;
+  height: 600px;
+  background: #51C53D;
+  margin: 30px auto;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 73px;
+  height: 73px;
+  border: 1px solid #fff;
+}
+
+.cell.w::after, .cell.b::after {
+  /* position: relative;
+  left: -75px; */
+  content: '';
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  background: #fff;
+  border-radius: 100%;
+  margin: 9.5px 0 0 9.5px;
+}
+
+.cell.b::after {
+  background: #000; 
+}
